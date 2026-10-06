@@ -1,0 +1,18 @@
+{
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "laravel-users"
+  ],
+  "mcpServers": {
+    "laravel-users": {
+      "type": "stdio",
+      "command": "C:/Users/dell/AppData/Local/Microsoft/WinGet/Packages/PHP.PHP.8.3_Microsoft.Winget.Source_8wekyb3d8bbwe/php.exe",
+      "args": [
+        "C:/Users/dell/techsaga/laravel-mcp/mcp-demo/artisan",
+        "mcp:start",
+        "demo"
+      ],
+      "env": {}
+    }
+  }
+}
