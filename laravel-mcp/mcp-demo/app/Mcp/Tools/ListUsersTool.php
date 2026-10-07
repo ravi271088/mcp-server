@@ -24,7 +24,7 @@ class ListUsersTool extends Tool
             ->get(config('app.url') . '/users');
 
         if ($res->failed()) {
-            return Response::error("API failed with status {$res}");
+            return Response::error("API failed with status {$res->status()}");
         }
 
         return Response::text($res->body());
