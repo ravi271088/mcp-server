@@ -16,9 +16,6 @@ permissions:
 jobs:
   report:
     runs-on: self-hosted          # <-- changed (was ubuntu-latest)
-    defaults:
-      run:
-        shell: C:\PROGRA~1\Git\bin\bash.exe --noprofile --norc -e -o pipefail {0}               # <-- added (Git Bash on Windows)
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
