@@ -18,7 +18,7 @@ jobs:
     runs-on: self-hosted          # <-- changed (was ubuntu-latest)
     defaults:
       run:
-        shell: bash               # <-- added (Git Bash on Windows)
+        shell: C:\PROGRA~1\Git\bin\bash.exe --noprofile --norc -e -o pipefail {0}               # <-- added (Git Bash on Windows)
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
